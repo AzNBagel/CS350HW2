@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b099a09-c398-4e11-be0b-5ee6bac3a355" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/CS350HW2.iml" afterPath="$PROJECT_DIR$/.idea/CS350HW2.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subarray_nsquare.py" afterPath="$PROJECT_DIR$/subarray_nsquare.py" />
     </list>
@@ -29,8 +27,8 @@
       <file leaf-file-name="subarray_nsquare.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/subarray_nsquare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.252">
-              <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.592">
+              <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -281,7 +279,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455259694153</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Started working on nlogn solution.">
+      <created>1455263677617</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1455263677617</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -321,7 +325,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed algorithm to properly be n squared." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed algorithm to properly be n squared." />
+    <MESSAGE value="Started working on nlogn solution." />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on nlogn solution." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -346,8 +351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/subarray_nsquare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.252">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.592">
+          <caret line="44" column="51" selection-start-line="44" selection-start-column="51" selection-end-line="44" selection-end-column="51" />
           <folding />
         </state>
       </provider>

@@ -42,16 +42,12 @@ def merge_subarray(array):
     r_array = array[mid:]
     # Have great faith that this will work.
     # Ideally it will return the maximum sub array.
-    l_max = merge_subarray(l_array)
-    r_max = merge_subarray(r_array)
+    l_max, l_result_array = merge_subarray(l_array)
+    r_max, r_result_array = merge_subarray(r_array)
 
-    current_val = 0
-    if array[0] > 0:
-        current_val += array[0]
-    if l_max > 0:
-        current_val += l_max
-    if r_max > 0:
-        current_val += r_max
+    current_max = 0
+
+
 
 
 
