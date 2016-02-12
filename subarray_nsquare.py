@@ -20,21 +20,11 @@ print(array)
 def max_subarray(array):
     max_substring = 0
     for i in range(len(array)):
-        print("i = %d" % i)
         current_subarray = 0
-        for j in range(len(array), i+1, -1):
-            print("j = %d" % j)
-            current_subarray += array[j-1]
+        for j in range(i, len(array)):
+            current_subarray += array[j]
             if current_subarray > max_substring:
                 max_substring = current_subarray
-        current_subarray = 0
-        for k in range(i, len(array)):
-            current_subarray += array[k]
-            if current_subarray > max_substring:
-                max_substring = current_subarray
-            print("k = %d" % k)
-
-        print(max_substring)
     print(max_substring)
 
 max_subarray(array)
