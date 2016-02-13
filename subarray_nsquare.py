@@ -67,11 +67,12 @@ def merge_subarray(array):
         if right_side > right_max:
             right_max = right_side
 
+    spanning_total = right_max + left_max
 
+    left_right_max = max(l_max, r_max)
+    real_max = max(left_right_max, spanning_total)
 
-
-
-
+    return real_max, merged_array
 
 
 # Pulled Mergesort from Interactivepython.org
@@ -110,5 +111,7 @@ def mergeSort(alist):
 
 
 max_subarray(array)
+
+print(merge_subarray(array))
 
 
