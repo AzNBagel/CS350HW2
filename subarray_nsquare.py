@@ -8,10 +8,12 @@ CS350
 """
 
 NUM_ELEMENTS = 10
+LOW_VAL = -10
+HIGH_VAL = 10
 
 array = []
 for i in range(NUM_ELEMENTS):
-    array.append(random.randint(-10, 10))
+    array.append(random.randint(LOW_VAL, HIGH_VAL))
 
 print(array)
 
@@ -45,23 +47,31 @@ def merge_subarray(array):
     l_max, l_result_array = merge_subarray(l_array)
     r_max, r_result_array = merge_subarray(r_array)
 
-    current_max = 0
+    merged_array = l_result_array + r_result_array
+
+
+    # To get middle span
+    merged_mid = len(merged_array)//2
+
+    left_side = 0
+    left_max = LOW_VAL
+    for num in reversed(merged_array[:merged_mid]):
+        left_side += num
+        if left_side > left_max:
+            left_max = left_side
+
+    right_side = 0
+    right_max = LOW_VAL
+    for num in merged_array[mid:]:
+        right_side += num
+        if right_side > right_max:
+            right_max = right_side
 
 
 
 
 
-    # Fuck all this shit below
-    current_max = array[0]
 
-    if current_max + l_max > l_max:
-        current_max += l_max
-    if current_max + r_max > r_max:
-        current_max += r_max
-    if current_max < l_max:
-        current_max = l_max
-    if current_max < r_max:
-        current_max = r_max
 
 
 # Pulled Mergesort from Interactivepython.org
