@@ -7,7 +7,7 @@ Algorithms & Complexity
 CS350
 """
 
-NUM_ELEMENTS = 10
+NUM_ELEMENTS = 11
 LOW_VAL = -10
 HIGH_VAL = 10
 
@@ -21,7 +21,7 @@ print(array)
 
 
 def max_subarray(array):
-    max_substring = 0
+    max_substring = LOW_VAL
     for i in range(len(array)):
         current_subarray = 0
         for j in range(i, len(array)):
@@ -49,20 +49,16 @@ def merge_subarray(array):
 
     merged_array = l_result_array + r_result_array
 
-
-    # To get middle span
-    merged_mid = len(merged_array)//2
-
     left_side = 0
     left_max = LOW_VAL
-    for num in reversed(merged_array[:merged_mid]):
+    for num in reversed(l_result_array):
         left_side += num
         if left_side > left_max:
             left_max = left_side
 
     right_side = 0
     right_max = LOW_VAL
-    for num in merged_array[mid:]:
+    for num in r_result_array:
         right_side += num
         if right_side > right_max:
             right_max = right_side
