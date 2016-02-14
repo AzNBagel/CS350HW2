@@ -47,7 +47,7 @@ def merge_subarray(array):
     l_max, l_result_array = merge_subarray(l_array)
     r_max, r_result_array = merge_subarray(r_array)
 
-    merged_array = l_result_array + r_result_array
+
 
     left_side = 0
     left_max = LOW_VAL
@@ -64,6 +64,8 @@ def merge_subarray(array):
             right_max = right_side
 
     spanning_total = right_max + left_max
+
+    merged_array = l_result_array + r_result_array
 
     left_right_max = max(l_max, r_max)
     real_max = max(left_right_max, spanning_total)
