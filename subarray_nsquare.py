@@ -7,7 +7,7 @@ Algorithms & Complexity
 CS350
 """
 
-NUM_ELEMENTS = 11
+NUM_ELEMENTS = 10
 LOW_VAL = -10
 HIGH_VAL = 10
 
@@ -64,7 +64,6 @@ def merge_subarray(array):
             right_max = right_side
 
     spanning_total = right_max + left_max
-
     left_right_max = max(l_max, r_max)
     real_max = max(left_right_max, spanning_total)
 
@@ -104,10 +103,10 @@ def mergeSort(alist):
             k=k+1
 
 
+michaels_shit_array = [9, -7, -4, -1, 7, -5, -3 , 5 , 7, -3]
 
+max_subarray(michaels_shit_array)
 
-max_subarray(array)
-
-print(merge_subarray(array))
+print(merge_subarray(michaels_shit_array))
 
 
