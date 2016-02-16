@@ -65,12 +65,10 @@ def merge_subarray(array):
 
     spanning_total = right_max + left_max
 
-    merged_array = l_result_array + r_result_array
-
     left_right_max = max(l_max, r_max)
     real_max = max(left_right_max, spanning_total)
 
-    return real_max, merged_array
+    return real_max, l_result_array + r_result_array
 
 
 # Pulled Mergesort from Interactivepython.org
